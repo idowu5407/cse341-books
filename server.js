@@ -20,7 +20,3 @@ const startServer = async () => {
 };
 
 await startServer();
-
-
-
-// console.log(`Server listening at 127.0.0.1:${PORT}`);//
