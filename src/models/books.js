@@ -73,3 +73,4 @@ export {
   authorExists, createBook,
   updateBook, deleteBook
 };
+export { getAllBooks, getBookById };

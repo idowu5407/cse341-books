@@ -1,4 +1,6 @@
 // src/controllers/books.js
+import { getAllBooks } from '../models/books.js';
+
 import {
   getAllBooks, getBookById, 
   authorExists, createBook,
@@ -11,7 +13,9 @@ const getBooksHandler = async (req, res) => {
     return res.status(200).json(books);
   } catch (error) {
     console.error('GET /books failed:', error.message);
-    return res.status(500).json({ message: 'Internal server error' });
+    return res.status(500).json({
+      message: 'Internal server error'
+    });
   }
 };
 
@@ -171,4 +175,4 @@ export {
   createBookHandler, updateBookHandler,
   deleteBookHandler
 };
-
+export { getBooksHandler };
