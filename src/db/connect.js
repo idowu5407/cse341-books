@@ -28,20 +28,17 @@ const connectToDb = async () => {
     console.log('MongoDB connected successfully!');
 
     return database;
-
   } catch (error) {
     console.error('MongoDB connection error:', error.message);
     throw error;
   }
-  const client = new MongoClient(connectionString);
-  await client.connect();
-  database = client.db(process.env.MONGODB_DB_NAME || 'cse341-books-db');
-  return database;
 };
 
 const getDb = () => {
   if (!database) {
-    throw new Error('Database not initialized. Call connectToDb first.');
+    throw new Error(
+      'Database not initialized. Call connectToDb first.'
+    );
   }
 
   return database;

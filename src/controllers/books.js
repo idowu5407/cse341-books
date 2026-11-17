@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 // src/controllers/books.js
 import { getAllBooks } from '../models/books.js';
+=======
+>>>>>>> 39adf8c6111f5f9ebbfce0e77eb33d55af402a05
 
 import {
   getAllBooks, getBookById, 
@@ -175,4 +178,7 @@ export {
   createBookHandler, updateBookHandler,
   deleteBookHandler
 };
+<<<<<<< HEAD
 export { getBooksHandler };
+=======
+>>>>>>> 39adf8c6111f5f9ebbfce0e77eb33d55af402a05
