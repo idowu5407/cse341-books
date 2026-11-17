@@ -33,11 +33,7 @@ const connectToDb = async () => {
     console.error('MongoDB connection error:', error.message);
     throw error;
   }
-  const client = new MongoClient(connectionString);
-  await client.connect();
-  database = client.db(process.env.MONGODB_DB_NAME || 'cse341-books-db');
-  return database;
-};
+
 
 const getDb = () => {
   if (!database) {
