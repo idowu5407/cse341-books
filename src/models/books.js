@@ -9,6 +9,7 @@ const getAllBooks = async () => {
   return books;
 };
 
+export { getAllBooks };
 const getBookById = async (bookId) => {
   const db = getDb();
   const collection = db.collection('books');
