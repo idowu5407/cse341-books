@@ -1,6 +1,4 @@
 // src/controllers/books.js
-import { getAllBooks } from '../models/books.js';
-
 import {
   getAllBooks, getBookById, 
   authorExists, createBook,
