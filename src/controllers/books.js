@@ -171,4 +171,3 @@ export {
   createBookHandler, updateBookHandler,
   deleteBookHandler
 };
-export { getBooksHandler };
