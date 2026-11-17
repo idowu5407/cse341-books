@@ -10,6 +10,7 @@ const getAllBooks = async () => {
 };
 
 // Retrieves a single book by ID from the database
+export { getAllBooks };
 const getBookById = async (bookId) => {
   const db = getDb();
   const collection = db.collection('books');
@@ -73,3 +74,4 @@ export {
   authorExists, createBook,
   updateBook, deleteBook
 };
+export { getAllBooks, getBookById };

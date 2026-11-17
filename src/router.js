@@ -6,6 +6,13 @@ import {
     deleteBookHandler
  } from './controllers/books.js';
 
+import { getBooksHandler } from './controllers/books.js';
+
+const router = express.Router();
+
+router.get('/books', getBooksHandler);
+
+import { getBooksHandler, getBookByIdHandler } from './controllers/books.js';
 import {
     getAllAuthors, getAuthorById,
     createAuthor, updateAuthor,
